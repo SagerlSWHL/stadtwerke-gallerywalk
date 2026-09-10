@@ -1,0 +1,1012 @@
+/* =========================
+   ALLGEMEINE EINSTELLUNGEN
+   ========================= */
+
+/* Entfernt Standard-Abstände und berechnet Größen einheitlich */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Grundeinstellungen für die gesamte Webseite */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+
+/* Entfernt die Standard-Unterstreichung von Links */
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   STARTSEITE / HERO
+   ========================= */
+
+.hero {
+
+    /* Hero nimmt mindestens die gesamte Bildschirmhöhe ein */
+    min-height: 100vh;
+
+    /* Hintergrund mit Farbverlauf */
+    background: linear-gradient(135deg, #123c5a, #26734d);
+
+    /* Inhalt horizontal und vertikal zentrieren */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Abstand zum Rand */
+    padding: 40px 20px;
+
+    /* Text zentrieren */
+    text-align: center;
+}
+
+
+/* Container für den Inhalt des Heroes */
+.hero-content {
+    max-width: 900px;
+}
+
+
+/* Kleiner Titel über der Hauptüberschrift */
+.small-title {
+
+    color: #d9f3e6;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+
+/* Hauptüberschrift der Startseite */
+.hero h1 {
+
+    color: white;
+
+    /* Passt die Schriftgröße automatisch an */
+    font-size: clamp(2.2rem, 6vw, 5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+/* Unterüberschrift */
+.hero h2 {
+
+    color: #d9f3e6;
+
+    font-size: clamp(1.3rem, 3vw, 2rem);
+
+    margin-bottom: 25px;
+}
+
+
+/* Einführungstext */
+.intro-text {
+
+    color: white;
+
+    max-width: 700px;
+
+    margin: 0 auto 35px auto;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   START BUTTON
+   ========================= */
+
+.start-button {
+
+    display: inline-block;
+
+    background-color: white;
+
+    color: #123c5a;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* Hover-Effekt */
+.start-button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   HAUPTBEREICH
+   ========================= */
+
+main {
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 80px 25px;
+}
+
+
+/* =========================
+   STARTSEITE - ÜBERSCHRIFT
+   ========================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-title h2 {
+
+    color: #123c5a;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 10px;
+}
+
+
+.section-title p {
+
+    color: #5b6770;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   STARTSEITE - KARTEN
+   ========================= */
+
+
+/* Grid für die Startseiten-Karten */
+.card-container {
+
+    display: grid;
+
+    /* Automatisch passende Spalten */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* Einzelne Startseiten-Karte */
+.card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    /* Inhalt wird untereinander angeordnet */
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* Hover-Effekt */
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Emoji auf der Startseite */
+.icon {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* Überschrift einer Startseiten-Karte */
+.card h3 {
+
+    color: #123c5a;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+
+/* Text einer Startseiten-Karte */
+.card p {
+
+    color: #5b6770;
+
+    margin-bottom: 20px;
+
+    /* Link wird nach unten gedrückt */
+    flex-grow: 1;
+}
+
+
+/* Link in Startseiten-Karten */
+.card a {
+
+    color: #26734d;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+}
+
+
+/* Hover für Karten-Link */
+.card a:hover {
+
+    color: #123c5a;
+}
+
+
+/* =========================
+   QUIZ KARTE AUF STARTSEITE
+   ========================= */
+
+.quiz-card {
+
+    background: linear-gradient(135deg, #123c5a, #26734d);
+
+    color: white;
+}
+
+
+.quiz-card h3 {
+
+    color: white;
+}
+
+
+.quiz-card p {
+
+    color: #e8f5ee;
+}
+
+
+.quiz-card a {
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+
+    background-color: #123c5a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+footer p {
+
+    margin-bottom: 5px;
+}
+
+
+/* Kleiner Text im Footer */
+.footer-small {
+
+    color: #b9c8d3;
+
+    font-size: 0.85rem;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   UNTERSEITEN - HEADER
+   ========================= */
+
+.page-header {
+
+    background: linear-gradient(135deg, #123c5a, #26734d);
+
+    color: white;
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+
+/* Container im Unterseiten-Header */
+.page-header-content {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* Überschrift im Unterseiten-Header */
+.page-header h1 {
+
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+/* Beschreibung im Unterseiten-Header */
+.page-header-content > p:not(.small-title) {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #e8f5ee;
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   UNTERSEITEN - HAUPTBEREICH
+   ========================= */
+
+.about-main {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 25px;
+}
+
+
+/* =========================
+   EINLEITUNG
+   ========================= */
+
+.about-intro {
+
+    max-width: 850px;
+
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+}
+
+
+/* Kleine grüne Bereichsüberschrift */
+.section-label {
+
+    color: #26734d;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Hauptüberschrift in Einleitungen */
+.about-intro h2 {
+
+    color: #123c5a;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 20px;
+}
+
+
+/* Text in Einleitungen */
+.about-intro p:not(.section-label) {
+
+    color: #5b6770;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   AUFGABEN / ALLGEMEINE KARTEN
+   ========================= */
+
+.task-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 80px;
+}
+
+
+/* Einzelne Aufgabenkarte */
+.task-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #26734d;
+
+    transition: 0.3s;
+}
+
+
+/* Hover-Effekt */
+.task-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+
+/* Emoji der Aufgabenkarte */
+.task-icon {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* Überschrift der Aufgabenkarte */
+.task-card h3 {
+
+    color: #123c5a;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+}
+
+
+/* Text der Aufgabenkarte */
+.task-card p {
+
+    color: #5b6770;
+
+    line-height: 1.7;
+}
+
+
+/* Hervorgehobener Text */
+.task-card strong {
+
+    color: #123c5a;
+}
+
+
+/* =========================
+   ZAHLEN & FAKTEN
+   ========================= */
+
+.facts-section {
+
+    background: linear-gradient(135deg, #123c5a, #26734d);
+
+    border-radius: 22px;
+
+    padding: 55px 35px;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+
+/* Überschrift-Bereich der Fakten */
+.facts-heading .section-label {
+
+    color: #d9f3e6;
+}
+
+
+.facts-heading h2 {
+
+    color: white;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 40px;
+}
+
+
+/* Grid der Zahlen */
+.facts-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Einzelne Zahlenbox */
+.fact-box {
+
+    background-color: rgba(255, 255, 255, 0.12);
+
+    padding: 30px 15px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* Große Zahl */
+.fact-number {
+
+    display: block;
+
+    /* Zahlen bleiben schwarz */
+    color: black;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* Beschreibung der Zahl */
+.fact-text {
+
+    color: #d9f3e6;
+
+    font-size: 0.95rem;
+}
+
+
+/* Hinweis unter den Zahlen */
+.facts-note {
+
+    color: #d9f3e6;
+
+    font-size: 0.8rem;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   ABSCHLUSS-BEREICH
+   ========================= */
+
+.about-ending {
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 50px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 50px;
+}
+
+
+/* Überschrift im Abschluss */
+.about-ending h2 {
+
+    color: #123c5a;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* Text im Abschluss */
+.about-ending p:not(.section-label) {
+
+    color: #5b6770;
+
+    max-width: 750px;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   ZURÜCK BUTTON
+   ========================= */
+
+.back-container {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.back-button {
+
+    display: inline-block;
+
+    background-color: #123c5a;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* Hover-Effekt */
+.back-button:hover {
+
+    background-color: #26734d;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   QUIZ
+   ========================= */
+
+.quiz-container {
+
+    max-width: 850px;
+
+    margin: 0 auto 60px auto;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #26734d;
+}
+
+
+/* Fragenzähler */
+.quiz-score {
+
+    color: #26734d;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* Frage */
+.quiz-question h2 {
+
+    color: #123c5a;
+
+    font-size: 2rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   QUIZ - ANTWORTEN
+   ========================= */
+
+.answer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+/* Antwortbutton */
+.answer-button {
+
+    border: 2px solid #e1e6ea;
+
+    background-color: #f8fafb;
+
+    color: #123c5a;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover auf Antwortbutton */
+.answer-button:hover:not(:disabled) {
+
+    border-color: #26734d;
+
+    transform: translateY(-3px);
+}
+
+
+/* Deaktivierter Button */
+.answer-button:disabled {
+
+    cursor: default;
+}
+
+
+/* Richtige Antwort */
+.answer-button.correct {
+
+    background-color: #26734d;
+
+    color: white;
+
+    border-color: #26734d;
+}
+
+
+/* Falsche Antwort */
+.answer-button.wrong {
+
+    background-color: #b33a3a;
+
+    color: white;
+
+    border-color: #b33a3a;
+}
+
+
+/* =========================
+   QUIZ - ERGEBNIS
+   ========================= */
+
+.quiz-result {
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+    min-height: 30px;
+}
+
+
+/* =========================
+   QUIZ - BUTTONS
+   ========================= */
+
+.next-button {
+
+    display: none;
+
+    margin-top: 25px;
+
+    background-color: #123c5a;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+.next-button:hover {
+
+    background-color: #26734d;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    /* Aufgaben-Karten auf zwei Spalten */
+    .task-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Zahlen ebenfalls auf zwei Spalten */
+    .facts-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Startseitenkarten werden automatisch angepasst */
+    .card-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   HANDY
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Hero kompakter */
+    .hero {
+
+        min-height: 90vh;
+
+        padding: 40px 20px;
+    }
+
+
+    /* Unterseiten-Header kompakter */
+    .page-header {
+
+        padding: 75px 20px;
+    }
+
+
+    /* Hauptbereich */
+    main {
+
+        padding: 60px 18px;
+    }
+
+
+    .about-main {
+
+        padding: 60px 18px;
+    }
+
+
+    /* Startseitenkarten */
+    .card-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Aufgaben-Karten */
+    .task-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Fakten */
+    .facts-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .facts-section {
+
+        padding: 40px 20px;
+    }
+
+
+    /* Abschlussbox */
+    .about-ending {
+
+        padding: 35px 25px;
+    }
+
+
+    /* Quiz */
+    .quiz-container {
+
+        padding: 30px 20px;
+    }
+
+
+    .quiz-question h2 {
+
+        font-size: 1.5rem;
+    }
+
+
+    .answer-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .answer-button {
+
+        width: 100%;
+    }
+
+}

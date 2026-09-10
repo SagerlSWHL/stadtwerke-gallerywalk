@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <!-- Zeichencodierung für Umlaute und Sonderzeichen -->
+    <meta charset="UTF-8">
+
+    <!-- Optimierung für Handy und Tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel im Browser -->
+    <title>Quiz | Stadtwerke Lübeck</title>
+
+    <!-- Verbindung mit unserer CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SEITEN-HEADER
+         ========================= -->
+
+    <header class="page-header">
+
+        <div class="page-header-content">
+
+            <p class="small-title">
+                Stadtwerke Lübeck Gruppe
+            </p>
+
+            <h1>
+                Quiz
+            </h1>
+
+            <p>
+                Wie gut kennst du jetzt die Stadtwerke Lübeck?
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         QUIZ
+         ========================= -->
+
+    <main class="about-main">
+
+
+        <section class="quiz-container">
+
+
+            <!-- =========================
+                 FRAGENZÄHLER
+                 ========================= -->
+
+            <div class="quiz-score">
+
+                Frage
+                <span id="question-number">1</span>
+                von
+                <span id="question-total">10</span>
+
+            </div>
+
+
+            <!-- =========================
+                 FRAGE
+                 ========================= -->
+
+            <div class="quiz-question">
+
+                <h2 id="question">
+                    Wie viele Menschen versorgen die
+                    Stadtwerke Lübeck ungefähr?
+                </h2>
+
+            </div>
+
+
+            <!-- =========================
+                 ANTWORTEN
+                 ========================= -->
+
+            <div class="answer-container">
+
+
+                <button class="answer-button">
+                    37.000
+                </button>
+
+
+                <button class="answer-button">
+                    370.000
+                </button>
+
+
+                <button class="answer-button">
+                    3,7 Millionen
+                </button>
+
+
+                <button class="answer-button">
+                    7.000
+                </button>
+
+
+            </div>
+
+
+            <!-- =========================
+                 ERGEBNIS
+                 ========================= -->
+
+            <div id="quiz-result" class="quiz-result">
+
+            </div>
+
+
+            <!-- =========================
+                 NÄCHSTE FRAGE
+                 ========================= -->
+
+            <button id="next-button" class="next-button">
+                Nächste Frage →
+            </button>
+
+
+            <!-- =========================
+                 QUIZ NEUSTARTEN
+                 ========================= -->
+
+            <button id="restart-button" class="next-button">
+                Quiz erneut starten
+            </button>
+
+
+        </section>
+
+
+        <!-- =========================
+             ZURÜCK BUTTON
+             ========================= -->
+
+        <div class="back-container">
+
+            <a href="index.html" class="back-button">
+                ← Zurück zur Startseite
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <p>
+            Interaktive Betriebspräsentation
+        </p>
+
+        <p>
+            Fachinformatiker für Anwendungsentwicklung
+        </p>
+
+        <p class="footer-small">
+            Stadtwerke Lübeck Gruppe GmbH · Gallery Walk
+        </p>
+
+    </footer>
+
+
+    <!-- Verbindung mit JavaScript -->
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
