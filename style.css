@@ -13,8 +13,8 @@
 /* Grundeinstellungen für die gesamte Webseite */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    color: #1f2933;
+    background-color: #f7f7f7;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -34,8 +34,13 @@ a {
     /* Hero nimmt mindestens die gesamte Bildschirmhöhe ein */
     min-height: 100vh;
 
-    /* Hintergrund mit Farbverlauf */
-    background: linear-gradient(135deg, #123c5a, #26734d);
+    /* Heller Verlauf aus Weiß und Orange */
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fff8ef 55%,
+        #f28c28 100%
+    );
 
     /* Inhalt horizontal und vertikal zentrieren */
     display: flex;
@@ -59,7 +64,7 @@ a {
 /* Kleiner Titel über der Hauptüberschrift */
 .small-title {
 
-    color: #d9f3e6;
+    color: #f28c28;
 
     font-size: 1rem;
 
@@ -76,9 +81,8 @@ a {
 /* Hauptüberschrift der Startseite */
 .hero h1 {
 
-    color: white;
+    color: #333333;
 
-    /* Passt die Schriftgröße automatisch an */
     font-size: clamp(2.2rem, 6vw, 5rem);
 
     line-height: 1.1;
@@ -90,7 +94,7 @@ a {
 /* Unterüberschrift */
 .hero h2 {
 
-    color: #d9f3e6;
+    color: #f28c28;
 
     font-size: clamp(1.3rem, 3vw, 2rem);
 
@@ -101,7 +105,7 @@ a {
 /* Einführungstext */
 .intro-text {
 
-    color: white;
+    color: #555555;
 
     max-width: 700px;
 
@@ -119,9 +123,9 @@ a {
 
     display: inline-block;
 
-    background-color: white;
+    background-color: #f28c28;
 
-    color: #123c5a;
+    color: white;
 
     padding: 15px 30px;
 
@@ -130,15 +134,19 @@ a {
     font-weight: bold;
 
     transition: 0.3s;
+
+    box-shadow: 0 6px 18px rgba(242, 140, 40, 0.25);
 }
 
 
 /* Hover-Effekt */
 .start-button:hover {
 
+    background-color: #df7815;
+
     transform: translateY(-4px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(242, 140, 40, 0.35);
 }
 
 
@@ -170,7 +178,7 @@ main {
 
 .section-title h2 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: clamp(2rem, 4vw, 3rem);
 
@@ -180,7 +188,7 @@ main {
 
 .section-title p {
 
-    color: #5b6770;
+    color: #666666;
 
     font-size: 1.1rem;
 }
@@ -196,7 +204,6 @@ main {
 
     display: grid;
 
-    /* Automatisch passende Spalten */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     gap: 25px;
@@ -210,13 +217,14 @@ main {
 
     padding: 30px;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    border-top: 4px solid #f28c28;
 
     transition: 0.3s;
 
-    /* Inhalt wird untereinander angeordnet */
     display: flex;
 
     flex-direction: column;
@@ -228,7 +236,7 @@ main {
 
     transform: translateY(-8px);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -244,7 +252,7 @@ main {
 /* Überschrift einer Startseiten-Karte */
 .card h3 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: 1.5rem;
 
@@ -255,11 +263,10 @@ main {
 /* Text einer Startseiten-Karte */
 .card p {
 
-    color: #5b6770;
+    color: #666666;
 
     margin-bottom: 20px;
 
-    /* Link wird nach unten gedrückt */
     flex-grow: 1;
 }
 
@@ -267,7 +274,7 @@ main {
 /* Link in Startseiten-Karten */
 .card a {
 
-    color: #26734d;
+    color: #f28c28;
 
     font-weight: bold;
 
@@ -278,7 +285,7 @@ main {
 /* Hover für Karten-Link */
 .card a:hover {
 
-    color: #123c5a;
+    color: #df7815;
 }
 
 
@@ -288,9 +295,15 @@ main {
 
 .quiz-card {
 
-    background: linear-gradient(135deg, #123c5a, #26734d);
+    background: linear-gradient(
+        135deg,
+        #f28c28,
+        #ffb45f
+    );
 
     color: white;
+
+    border-top: none;
 }
 
 
@@ -302,7 +315,7 @@ main {
 
 .quiz-card p {
 
-    color: #e8f5ee;
+    color: #fff7ed;
 }
 
 
@@ -318,7 +331,7 @@ main {
 
 footer {
 
-    background-color: #123c5a;
+    background-color: #f28c28;
 
     color: white;
 
@@ -337,7 +350,7 @@ footer p {
 /* Kleiner Text im Footer */
 .footer-small {
 
-    color: #b9c8d3;
+    color: #fff0dc;
 
     font-size: 0.85rem;
 
@@ -351,13 +364,20 @@ footer p {
 
 .page-header {
 
-    background: linear-gradient(135deg, #123c5a, #26734d);
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fff7ed 55%,
+        #f28c28 100%
+    );
 
-    color: white;
+    color: #333333;
 
     padding: 100px 20px;
 
     text-align: center;
+
+    border-bottom: 1px solid #f0e2d2;
 }
 
 
@@ -372,6 +392,8 @@ footer p {
 
 /* Überschrift im Unterseiten-Header */
 .page-header h1 {
+
+    color: #333333;
 
     font-size: clamp(2.5rem, 6vw, 4.5rem);
 
@@ -388,7 +410,7 @@ footer p {
 
     margin: 0 auto;
 
-    color: #e8f5ee;
+    color: #555555;
 
     font-size: 1.1rem;
 }
@@ -422,10 +444,10 @@ footer p {
 }
 
 
-/* Kleine grüne Bereichsüberschrift */
+/* Kleine orange Bereichsüberschrift */
 .section-label {
 
-    color: #26734d;
+    color: #f28c28;
 
     font-size: 0.9rem;
 
@@ -440,7 +462,7 @@ footer p {
 /* Hauptüberschrift in Einleitungen */
 .about-intro h2 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: clamp(2rem, 4vw, 3rem);
 
@@ -451,7 +473,7 @@ footer p {
 /* Text in Einleitungen */
 .about-intro p:not(.section-label) {
 
-    color: #5b6770;
+    color: #666666;
 
     font-size: 1.05rem;
 
@@ -484,9 +506,9 @@ footer p {
 
     border-radius: 18px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 
-    border-left: 5px solid #26734d;
+    border-left: 5px solid #f28c28;
 
     transition: 0.3s;
 }
@@ -497,7 +519,7 @@ footer p {
 
     transform: translateY(-8px);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -513,7 +535,7 @@ footer p {
 /* Überschrift der Aufgabenkarte */
 .task-card h3 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: 1.5rem;
 
@@ -524,7 +546,7 @@ footer p {
 /* Text der Aufgabenkarte */
 .task-card p {
 
-    color: #5b6770;
+    color: #666666;
 
     line-height: 1.7;
 }
@@ -533,7 +555,7 @@ footer p {
 /* Hervorgehobener Text */
 .task-card strong {
 
-    color: #123c5a;
+    color: #f28c28;
 }
 
 
@@ -543,7 +565,11 @@ footer p {
 
 .facts-section {
 
-    background: linear-gradient(135deg, #123c5a, #26734d);
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #f28c28
+    );
 
     border-radius: 22px;
 
@@ -552,19 +578,21 @@ footer p {
     margin-bottom: 80px;
 
     text-align: center;
+
+    border: 1px solid #f3d4b1;
 }
 
 
 /* Überschrift-Bereich der Fakten */
 .facts-heading .section-label {
 
-    color: #d9f3e6;
+    color: #f28c28;
 }
 
 
 .facts-heading h2 {
 
-    color: white;
+    color: #333333;
 
     font-size: clamp(2rem, 4vw, 3rem);
 
@@ -586,11 +614,13 @@ footer p {
 /* Einzelne Zahlenbox */
 .fact-box {
 
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.75);
 
     padding: 30px 15px;
 
     border-radius: 15px;
+
+    border: 1px solid rgba(242, 140, 40, 0.2);
 
     backdrop-filter: blur(5px);
 }
@@ -601,7 +631,6 @@ footer p {
 
     display: block;
 
-    /* Zahlen bleiben schwarz */
     color: black;
 
     font-size: 2rem;
@@ -615,7 +644,7 @@ footer p {
 /* Beschreibung der Zahl */
 .fact-text {
 
-    color: #d9f3e6;
+    color: #555555;
 
     font-size: 0.95rem;
 }
@@ -624,7 +653,7 @@ footer p {
 /* Hinweis unter den Zahlen */
 .facts-note {
 
-    color: #d9f3e6;
+    color: #666666;
 
     font-size: 0.8rem;
 
@@ -644,7 +673,9 @@ footer p {
 
     padding: 50px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    border-top: 4px solid #f28c28;
 
     margin-bottom: 50px;
 }
@@ -653,7 +684,7 @@ footer p {
 /* Überschrift im Abschluss */
 .about-ending h2 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: 2.2rem;
 
@@ -664,7 +695,7 @@ footer p {
 /* Text im Abschluss */
 .about-ending p:not(.section-label) {
 
-    color: #5b6770;
+    color: #666666;
 
     max-width: 750px;
 
@@ -688,7 +719,7 @@ footer p {
 
     display: inline-block;
 
-    background-color: #123c5a;
+    background-color: #f28c28;
 
     color: white;
 
@@ -699,17 +730,19 @@ footer p {
     font-weight: bold;
 
     transition: 0.3s;
+
+    box-shadow: 0 6px 18px rgba(242, 140, 40, 0.22);
 }
 
 
 /* Hover-Effekt */
 .back-button:hover {
 
-    background-color: #26734d;
+    background-color: #df7815;
 
     transform: translateY(-3px);
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(242, 140, 40, 0.3);
 }
 
 
@@ -729,16 +762,16 @@ footer p {
 
     border-radius: 20px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 
-    border-left: 5px solid #26734d;
+    border-left: 5px solid #f28c28;
 }
 
 
 /* Fragenzähler */
 .quiz-score {
 
-    color: #26734d;
+    color: #f28c28;
 
     font-weight: bold;
 
@@ -749,7 +782,7 @@ footer p {
 /* Frage */
 .quiz-question h2 {
 
-    color: #123c5a;
+    color: #333333;
 
     font-size: 2rem;
 
@@ -776,11 +809,11 @@ footer p {
 /* Antwortbutton */
 .answer-button {
 
-    border: 2px solid #e1e6ea;
+    border: 2px solid #e1e1e1;
 
-    background-color: #f8fafb;
+    background-color: #fafafa;
 
-    color: #123c5a;
+    color: #333333;
 
     padding: 16px;
 
@@ -799,7 +832,9 @@ footer p {
 /* Hover auf Antwortbutton */
 .answer-button:hover:not(:disabled) {
 
-    border-color: #26734d;
+    border-color: #f28c28;
+
+    color: #f28c28;
 
     transform: translateY(-3px);
 }
@@ -815,11 +850,11 @@ footer p {
 /* Richtige Antwort */
 .answer-button.correct {
 
-    background-color: #26734d;
+    background-color: #f28c28;
 
     color: white;
 
-    border-color: #26734d;
+    border-color: #f28c28;
 }
 
 
@@ -860,7 +895,7 @@ footer p {
 
     margin-top: 25px;
 
-    background-color: #123c5a;
+    background-color: #f28c28;
 
     color: white;
 
@@ -881,9 +916,79 @@ footer p {
 /* Hover */
 .next-button:hover {
 
-    background-color: #26734d;
+    background-color: #df7815;
 
     transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(242, 140, 40, 0.25);
+}
+
+
+/* =========================
+   SEITENBILDER
+   ========================= */
+
+.page-image {
+
+    max-width: 1000px;
+
+    margin: 0 auto 70px auto;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+
+    border: 1px solid #eeeeee;
+}
+
+
+/* Bild */
+.page-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 380px;
+
+    object-fit: cover;
+}
+
+
+/* Besonders breites Bild */
+.page-image-wide img {
+
+    height: 440px;
+}
+
+
+/* Digitalisierungsbild */
+.page-image-digital img {
+
+    height: auto;
+
+    max-height: 560px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+}
+
+
+/* Bildunterschrift */
+.page-image figcaption {
+
+    padding: 14px 20px;
+
+    color: #666666;
+
+    font-size: 0.9rem;
+
+    text-align: center;
 }
 
 
@@ -907,10 +1012,18 @@ footer p {
     }
 
 
-    /* Startseitenkarten werden automatisch angepasst */
+    /* Startseitenkarten */
     .card-container {
 
         grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Seitenbilder */
+    .page-image img,
+    .page-image-wide img {
+
+        height: 300px;
     }
 
 }
@@ -1007,6 +1120,177 @@ footer p {
     .answer-button {
 
         width: 100%;
+    }
+
+
+    /* Seitenbilder */
+    .page-image {
+
+        margin-bottom: 50px;
+
+        border-radius: 16px;
+    }
+
+
+    .page-image img,
+    .page-image-wide img {
+
+        height: 220px;
+    }
+
+
+    .page-image-digital img {
+
+        height: auto;
+    }
+
+}
+
+/* =========================
+   SEITENNAVIGATION
+   ========================= */
+
+.page-navigation {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+
+/* Weiter-Button */
+
+.next-page-button {
+
+    display: inline-block;
+
+    background-color: #f28c28;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 6px 18px rgba(242, 140, 40, 0.22);
+}
+
+
+/* Hover */
+
+.next-page-button:hover {
+
+    background-color: #df7815;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(242, 140, 40, 0.30);
+}
+
+
+/* =========================
+   SEITENNAVIGATION – HANDY
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .page-navigation {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .page-navigation .back-button,
+    .page-navigation .next-page-button {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+
+/* =========================
+   HERO-BILD
+   ========================= */
+
+.hero-image {
+
+    max-width: 850px;
+
+    margin: 0 auto 35px auto;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Bild selbst */
+
+.hero-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 360px;
+
+    object-fit: cover;
+}
+
+
+/* Bildunterschrift */
+
+.hero-image p {
+
+    color: #666666;
+
+    background-color: white;
+
+    padding: 10px 15px;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+}
+
+
+/* =========================
+   HERO-BILD – HANDY
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .hero-image {
+
+        border-radius: 16px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .hero-image img {
+
+        height: 220px;
     }
 
 }

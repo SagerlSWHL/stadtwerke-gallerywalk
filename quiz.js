@@ -6,121 +6,71 @@ const questions = [
 
     {
         question: "Wie viele Menschen versorgen die Stadtwerke Lübeck ungefähr?",
+
         answers: [
             "37.000",
             "370.000",
             "3,7 Millionen",
             "7.000"
         ],
+
         correct: 1
     },
 
 
     {
-        question: "Wie viele Gemeinden umfasst das Versorgungsgebiet ungefähr?",
-        answers: [
-            "11",
-            "50",
-            "110",
-            "500"
-        ],
-        correct: 2
-    },
-
-
-    {
         question: "Wie lang ist das Netz der Stadtwerke Lübeck ungefähr?",
+
         answers: [
             "676 km",
-            "6.761 km",
-            "67.610 km",
-            "761 km"
+            "6.780 km",
+            "67.800 km",
+            "780 km"
         ],
+
         correct: 1
     },
 
 
     {
         question: "Welches Unternehmen steht unter anderem für Glasfaser, Smart City und Digitale Schule?",
+
         answers: [
             "SWL Mobil GmbH",
             "SWL Digital GmbH",
             "TraveNetz GmbH",
             "SWL Energie GmbH"
         ],
+
         correct: 1
     },
 
 
     {
         question: "Wie viele Schüler:innen werden durch die Digitale Schule ungefähr erreicht?",
+
         answers: [
             "3.000",
             "10.000",
             "30.000",
             "100.000"
         ],
+
         correct: 2
     },
 
 
     {
-        question: "Welche Ausbildung gehört zum Bereich Anwendungsentwicklung?",
-        answers: [
-            "Fachinformatiker:in für Anwendungsentwicklung",
-            "Kfz-Mechatroniker:in",
-            "Fachkraft im Fahrbetrieb",
-            "Umwelttechnolog:in für Wasserversorgung"
-        ],
-        correct: 0
-    },
-
-
-    {
         question: "Welchen Anteil der Busse sollen die Stadtwerke bis 2030 elektrisch betreiben?",
+
         answers: [
             "25 %",
             "50 %",
             "70 %",
             "100 %"
         ],
+
         correct: 2
-    },
-
-
-    {
-        question: "Welches Thema gehört zur zukünftigen Wärmeversorgung Lübecks?",
-        answers: [
-            "Kommunale Wärmeplanung",
-            "Ausbau von Kohlekraftwerken",
-            "Abschaffung von Wärmenetzen",
-            "Verzicht auf erneuerbare Energien"
-        ],
-        correct: 0
-    },
-
-
-    {
-        question: "Welcher Bereich gehört zur SWL Digital GmbH?",
-        answers: [
-            "Glasfaser",
-            "Trinkwasseraufbereitung",
-            "Busreparatur",
-            "Fahrkartenkontrolle"
-        ],
-        correct: 0
-    },
-
-
-    {
-        question: "Wofür wird AI-PowerMatch eingesetzt?",
-        answers: [
-            "Für eine bessere Abstimmung von Energieverbrauch und erneuerbarer Energie",
-            "Für die Fahrkartenkontrolle in Bussen",
-            "Für die Reparatur von Glasfaserkabeln",
-            "Für die Verwaltung von Parkplätzen"
-        ],
-        correct: 0
     }
 
 ];
