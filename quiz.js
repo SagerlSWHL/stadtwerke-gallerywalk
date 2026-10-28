@@ -71,6 +71,48 @@ const questions = [
         ],
 
         correct: 2
+    },
+
+
+    {
+        question: "Seit wann gibt es die Vorgänger der Stadtwerke Lübeck?",
+
+        answers: [
+            "1761",
+            "1895",
+            "1922",
+            "2000"
+        ],
+
+        correct: 0
+    },
+
+
+    {
+        question: "Wem gehören die Stadtwerke Lübeck?",
+
+        answers: [
+            "Dem Land Schleswig-Holstein",
+            "Einem privaten Energiekonzern",
+            "Der Hansestadt Lübeck",
+            "Den Mitarbeiter:innen"
+        ],
+
+        correct: 2
+    },
+
+
+    {
+        question: "Welche Rechtsform hat die Stadtwerke Lübeck Gruppe?",
+
+        answers: [
+            "AG",
+            "GmbH",
+            "e.V.",
+            "KG"
+        ],
+
+        correct: 1
     }
 
 ];

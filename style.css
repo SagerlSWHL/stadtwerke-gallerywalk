@@ -1294,3 +1294,320 @@ footer p {
     }
 
 }
+
+/* =========================
+   ZEITSTRAHL - GESCHICHTE
+   ========================= */
+
+.timeline {
+
+    max-width: 750px;
+
+    margin: 0 auto 20px auto;
+
+    padding: 0;
+
+    list-style: none;
+
+    border-left: 4px solid #f28c28;
+}
+
+
+/* Ein Eintrag im Zeitstrahl */
+.timeline li {
+
+    position: relative;
+
+    padding: 0 0 30px 30px;
+}
+
+
+/* Orangener Punkt auf der Linie */
+.timeline li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -12px;
+
+    top: 4px;
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    border: 4px solid #f28c28;
+}
+
+
+/* Jahreszahl */
+.timeline-year {
+
+    color: #f28c28;
+
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}
+
+
+/* Text zum Jahr */
+.timeline li p {
+
+    color: #555555;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   BILDQUELLE
+   ========================= */
+
+.image-source {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 0.8rem;
+
+    opacity: 0.7;
+}
+
+
+/* Links in Quellenangaben */
+.facts-note a {
+
+    color: #df7815;
+}
+
+
+/* =========================
+   ORGANIGRAMM
+   ========================= */
+
+.org-chart {
+
+    max-width: 1000px;
+
+    margin: 0 auto 80px auto;
+
+    text-align: center;
+}
+
+
+/* Kasten im Organigramm */
+.org-box {
+
+    display: inline-block;
+
+    background-color: white;
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    border: 3px solid #f28c28;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    font-weight: bold;
+
+    color: #333333;
+}
+
+
+/* Holding oben */
+.org-box-main {
+
+    background-color: #f28c28;
+
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+
+.org-box-main span {
+
+    display: block;
+
+    font-size: 0.85rem;
+
+    font-weight: normal;
+
+    margin-top: 4px;
+}
+
+
+/* Kleinere Box (Enkelgesellschaft) */
+.org-box-small {
+
+    font-size: 0.9rem;
+
+    border-style: dashed;
+}
+
+
+/* Senkrechte Linie unter der Holding */
+.org-top {
+
+    position: relative;
+
+    padding-bottom: 30px;
+}
+
+
+.org-top::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    height: 30px;
+
+    border-left: 3px solid #f28c28;
+}
+
+
+/* Reihe mit den Tochtergesellschaften */
+.org-children {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    padding-top: 30px;
+
+    position: relative;
+}
+
+
+/* Querlinie von der ersten bis zur letzten Box */
+.org-children::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 12.5%;
+
+    right: 12.5%;
+
+    border-top: 3px solid #f28c28;
+}
+
+
+.org-branch {
+
+    position: relative;
+}
+
+
+/* Kurze Linie von der Querlinie zu jeder Box */
+.org-branch::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: -30px;
+
+    height: 30px;
+
+    border-left: 3px solid #f28c28;
+}
+
+
+/* Unterebene (TraveNetz unter Energie) */
+.org-sub {
+
+    margin-top: 20px;
+
+    position: relative;
+}
+
+
+.org-sub::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: -20px;
+
+    height: 20px;
+
+    border-left: 3px dashed #f28c28;
+}
+
+
+@media (max-width: 900px) {
+
+    .org-children {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .org-children::before,
+    .org-branch::before,
+    .org-top::after {
+
+        display: none;
+    }
+
+}
+
+
+/* Quellenangabe unter dem Zeitstrahl */
+.timeline-source {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+
+/* Quiz-Karte als breiter Abschluss unter allen Karten */
+.card-container .quiz-card {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+}
+
+
+/* Bildquelle in derselben Zeile (Startseite, damit der Hero nicht höher wird) */
+.image-source-inline {
+
+    font-size: 0.8rem;
+
+    opacity: 0.7;
+}
+
+
+/* Startbild passt sich der Bildschirmhöhe an,
+   damit "Unternehmen entdecken" ohne Scrollen sichtbar ist */
+.hero-image img {
+
+    height: clamp(140px, calc(100vh - 620px), 360px);
+}
